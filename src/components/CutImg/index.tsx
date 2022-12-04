@@ -1,11 +1,5 @@
 import React, {
-  ForwardedRef,
   forwardRef,
-  ForwardRefExoticComponent,
-  ForwardRefRenderFunction,
-  ReactNode,
-  RefAttributes,
-  RefObject,
   useImperativeHandle,
   useRef,
   useState,
@@ -26,7 +20,7 @@ enum enumWidthAndHeight {
   'height' = '高度',
 }
 
-const Index = (props, ref) => {
+const Index = (props: IProps, ref) => {
   const { handleCut, locked = false } = props;
   let imageRef: any = useRef(null);
   let fileUrl: any = useRef(null);
